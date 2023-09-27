@@ -1,0 +1,129 @@
+/* ----COMMON STYLES---- */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffefc1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1480px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ----HEADER---- */
+.header {
+  position: relative;
+}
+
+.header-upper {
+  height: 292px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-upper::after {
+  content: "";
+  position: absolute;
+  top: 292px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.header-upper__text {
+  width: 829px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.title {
+  display: block;
+  margin: 23px 0 36px 35px;
+  font-size: 20px;
+  color: #000;
+  font-family: 'Krona One', sans-serif;
+}
+
+.subtitle {
+  margin-left: 35px;
+  font-family: 'Crimson Pro', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #D8899E;
+}
+
+.header-upper__star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header-main {
+  margin-top: 40px;
+}
+
+.description {
+  margin: 0 0 45px 78px;
+  font-family: 'Crimson Pro', sans-serif;
+  font-size: 30px;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 35px;
+  width: 1320px;
+  height: 156px;
+  background-color: #D8899E;
+  border: 1px solid #000;
+}
+
+.menu::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  background: transparent;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.menu-background {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  z-index: -1;
+}
+
+.nav-title {
+  font-family: 'Krona One', sans-serif;
+  font-size: 20px;
+}
+
+.nav-link {
+  font-family: 'Crimson Pro', sans-serif;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
