@@ -1,3 +1,8 @@
+/* ----VARIABLES---- */
+:root {
+  --font-size: 25px;
+  --font-size-header: 70px;
+}
 /* ----COMMON STYLES---- */
 *,
 *:before,
@@ -14,7 +19,6 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1480px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -42,7 +46,7 @@ body {
 }
 
 .header-upper__text {
-  width: 829px;
+  width: 60vw;
   border-left: 1px solid #000;
   border-right: 1px solid #000;
 }
@@ -58,7 +62,7 @@ body {
 .subtitle {
   margin-left: 35px;
   font-family: 'Crimson Pro', sans-serif;
-  font-size: 70px;
+  font-size: var(--font-size-header);
   font-weight: bold;
   color: #D8899E;
 }
@@ -71,44 +75,35 @@ body {
 }
 
 .header-main {
-  margin-top: 40px;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
 }
 
-.description {
+/*.description {
   margin: 0 0 45px 78px;
   font-family: 'Crimson Pro', sans-serif;
   font-size: 30px;
-}
+}*/
 
 .menu {
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 35px;
-  width: 1320px;
+  width: 78rem;
   height: 156px;
   background-color: #D8899E;
   border: 1px solid #000;
 }
 
-.menu::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
-  background: transparent;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
 .menu-background {
   position: absolute;
-  top: 32px;
-  left: 0;
+  top: 35px;
+  left: 2rem;
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
 
@@ -127,3 +122,204 @@ body {
 .nav-link:hover {
   cursor: pointer;
 }
+
+/* ----СЛЕДУЮЩАЯ ОСТАНОВКА---- */
+.section-header {
+  position: relative;
+  margin: 11.3rem 0 3.9rem;
+  text-align: center;
+  font-size: 4.375rem;
+  font-weight: 800;
+}
+
+.section-header::before {
+  content: "";
+  position: absolute;
+  bottom: 10rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.section-header::after {
+  content: "";
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.trip-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trip-content::after {
+  content: "";
+  position: absolute;
+  top: 31rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+}
+
+.trip-content__description {
+  flex: 1;
+  width: 50%;
+  max-width: 50vw;
+  height: 31rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  margin-left: 1rem;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.block-title {
+  margin: 1.5rem 0 1rem;
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.block-description {
+  margin-bottom: 1.875rem;
+  font-size: var(--font-size);
+}
+
+.trip-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.trip-info__item {
+  display: flex;
+  align-items: center;
+}
+
+.trip-info__item:first-child span:first-child {
+  margin-right: 4.75rem;
+}
+
+.trip-info__item span:first-child {
+  margin-right: 4.375rem;
+  font-size: var(--font-size);
+  color: #4F4F4F;
+}
+
+.trip-info__item span:last-child {
+  font-size: 2.1875rem;
+  font-weight: 700;
+}
+
+.get-program {
+  margin-top: 3.375rem;
+  width: 37.8125cqw;
+  height: 4.5rem;
+  background-color: #3A7352;
+  color: #FAFAFA;
+  font-size: var(--font-size);
+}
+
+.get-program:hover {
+  cursor: pointer;
+}
+
+.trip-content__photo {
+  position: relative;
+  flex: 1;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trip-content__photo::before {
+  content: "";
+  width: 25%;
+  height: 1px;
+  background: #000;
+  top: 50%;
+  right: 50px;
+}
+
+.trip-content__photo::after {
+  content: "";
+  width: 25%;
+  height: 1px;
+  background: #000;
+  top: 50%;
+  right: 20px;
+}
+
+.trip-content__photo img {
+  width: 36vw;
+  max-width: 640px;
+}
+
+/* ----О ПРОЕКТЕ---- */
+.container__about {
+  margin-top: 2.5rem;
+  margin-left: 0;
+  width: 97vw;
+  /* TODO Поменять цвет на корректный */
+  background-color: orange;
+}
+
+.about-content {
+  position: relative;
+  padding: 2rem 0 2rem;
+  display: flex;
+}
+
+.about-content__photo {
+  flex: 1;
+}
+
+.about-content__photo img {
+  width: 21.25rem;
+  height: auto;
+}
+
+.about-content__description {
+  flex: 1;
+  font-size: var(--font-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content__description p:first-child {
+  margin-bottom: 2rem;
+}
+
+.about-content__title {
+  flex: 1;
+  font-size: var(--font-size-header);
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-icon {
+  position: absolute;
+  right: 0.5rem;
+}
+
+.about-bar__item {
+  display: flex;
+  align-items: center;
+}
+
+.about-bar__item span {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+
