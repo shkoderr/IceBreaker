@@ -443,6 +443,10 @@ body {
   font-weight: 400;
 }
 
+.book-place__btn:hover {
+  cursor: pointer;
+}
+
 .book-place__icon {
   position: absolute;
 }
