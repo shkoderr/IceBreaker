@@ -411,3 +411,48 @@ body {
 .benefit-text__additional {
   margin-top: 2rem;
 }
+
+/* ----ЗАБРОНИРОВАТЬ МЕСТО---- */
+
+.book-place {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: #3A7352;
+  height: 40rem;
+}
+
+.book-place__text {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 68rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #F5F5DC;
+}
+
+.book-place__btn {
+  margin: 0 auto;
+  width: 37.8125rem;
+  height: 4.5rem;
+  background-color: #D8899E;
+  color: #FAFAFA;
+  font-size: var(--font-size);
+  font-weight: 400;
+}
+
+.book-place__icon {
+  position: absolute;
+}
+
+.book-place__icon1 {
+  bottom: 1%;
+  left: 1%;
+}
+
+.book-place__icon2 {
+  top: 0;
+  right: 1%;
+}
