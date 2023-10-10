@@ -93,15 +93,7 @@
             </div>
           </div>
           <div class="about-bar">
-            <div class="about-bar__item">
-              <span>Никакой зубрежки – чистая практика!</span>
-              <img src="./assets/images/little-star.svg" alt="soft-star" />
-            </div>
-            <div class="about-bar__item">
-              <span>Никакой зубрежки – чистая практика!</span>
-              <img src="./assets/images/little-star.svg" alt="soft-star" />
-            </div>
-            <div class="about-bar__item">
+            <div class="about-bar__item" id="scrolling-container">
               <span>Никакой зубрежки – чистая практика!</span>
               <img src="./assets/images/little-star.svg" alt="soft-star" />
             </div>
@@ -152,7 +144,8 @@
               <h3 class="benefit-title">Увидите страну с необычных сторон</h3>
               <div class="benefit-text__wrapper">
                 <p class="benefit-text">
-                  Наш гид - местный житель. Он знает ЮАР вдоль и поперек. Вместе мы изучим сердце Кейптауна, посетим трущобы и увидим самые красивые пейзажи. И это далеко не все :)
+                  Наш гид - местный житель. Он знает ЮАР вдоль и поперек. Вместе мы изучим сердце Кейптауна, посетим
+                  трущобы и увидим самые красивые пейзажи. И это далеко не все :)
                 </p>
               </div>
             </div>
@@ -160,43 +153,326 @@
         </div>
         <div class="container">
           <div class="book-place">
-            <p class="book-place__text">В путешествии ты поймешь какая лексика и грамматика необходимы именно тебе. Как общаться про свою профессию и свои увлечения. Познакомишься со множеством близких по духу людей. Если ты давно ждал знака свыше для того, чтобы начать учить английский или посетить ЮАР — это он!</p>
+            <p class="book-place__text">
+              В путешествии ты поймешь какая лексика и грамматика необходимы именно тебе. Как общаться про свою
+              профессию и свои увлечения. Познакомишься со множеством близких по духу людей. Если ты давно ждал знака
+              свыше для того, чтобы начать учить английский или посетить ЮАР — это он!
+            </p>
             <button class="book-place__btn">ЗАБРОНИРОВАТЬ МЕСТО</button>
-            <img class="book-place__icon book-place__icon1" src="./assets/images/Spiral 1.svg" alt="icon">
-            <img class="book-place__icon book-place__icon2" src="./assets/images/Spiral 3.svg" alt="icon">
+            <img class="book-place__icon book-place__icon1" src="./assets/images/Spiral 1.svg" alt="icon" />
+            <img class="book-place__icon book-place__icon2" src="./assets/images/Spiral 3.svg" alt="icon" />
           </div>
         </div>
       </section>
       <section>
         <div class="container parallax-container">
           <div class="parallax-item" id="item1">
-            <img src="./assets/images/parallax/1.png" alt="photo">
+            <img src="./assets/images/parallax/1.png" alt="photo" />
           </div>
           <div class="parallax-item" id="item2">
-            <img src="./assets/images/parallax/2.png" alt="photo">
+            <img src="./assets/images/parallax/2.png" alt="photo" />
           </div>
           <div class="parallax-item" id="item3">
-            <img src="./assets/images/parallax/3.png" alt="photo">
+            <img src="./assets/images/parallax/3.png" alt="photo" />
           </div>
           <div class="parallax-item" id="item4">
-            <img src="./assets/images/parallax/4.png" alt="photo">
+            <img src="./assets/images/parallax/4.png" alt="photo" />
           </div>
           <div class="parallax-item" id="item5">
-            <img src="./assets/images/parallax/5.png" alt="photo">
+            <img src="./assets/images/parallax/5.png" alt="photo" />
           </div>
           <div class="parallax-item" id="item6">
-            <img src="./assets/images/parallax/6.png" alt="photo">
+            <img src="./assets/images/parallax/6.png" alt="photo" />
           </div>
           <div class="parallax-item" id="item7">
-            <img src="./assets/images/parallax/7.png" alt="photo">
+            <img src="./assets/images/parallax/7.png" alt="photo" />
           </div>
         </div>
         <div class="container container-video">
-          <iframe width="980" height="551.25" src="https://www.youtube.com/embed/Py4NpNQq9_w?si=iEdkns2MecFvlaUZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe
+            width="980"
+            height="551.25"
+            src="https://www.youtube.com/embed/Py4NpNQq9_w?si=iEdkns2MecFvlaUZ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section>
+        <header class="section-header">КАК ПОСТРОЕН ТУР?</header>
+        <div class="container">
+          <div class="trip-structure">
+            <div class="trip-structure__text">
+              <h3 class="trip-structure__text-title">ПРАКТИКА АНГЛИЙСКОГО</h3>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>
+                  Попадем во множество рутинных ситуаций для практики языка: закажем еду, заселимся в отель и т.д.
+                </div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Пообщаемся с англоговорящим гидом и водителем</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Посетим экскурсии и обсудим их</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Приготовим обед на кулинарном мастер классе</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Поиграем в настолки</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Каждый день будем изучать новую тему лексики и грамматики</div>
+              </div>
+            </div>
+            <div class="trip-structure__photo">
+              <img src="./assets/images/Ksusha_Vika.png" alt="guides" />
+            </div>
+            <div class="trip-structure__photo">
+              <img src="./assets/images/CapeTown.png" alt="CapeTown_photo" />
+            </div>
+            <div class="trip-structure__text">
+              <h3 class="trip-structure__text-title">ТУРИЗМ</h3>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Посетим одно из 7 новых чудес света</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Побываем в гостях у китов гепардами и пингвинами</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Посетим точку в Африке, южнее которой только Антарктида</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Посмотрим на уличное искусство</div>
+              </div>
+            </div>
+            <div class="trip-structure__text">
+              <h3 class="trip-structure__text-title">ТУРИЗМ</h3>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Свободные дни с шоппингом</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Отдых на винодельне с видом на горы</div>
+              </div>
+              <div class="trip-structure__text-item">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Для желающих - восхождение на пик Львиная голова в Кейптауне</div>
+              </div>
+            </div>
+            <div class="trip-structure__photo">
+              <img src="./assets/images/Mountains.png" alt="guides" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="section-header__orange">ИЗ ЧЕГО СОСТОИТ СТОИМОСТЬ?</header>
+        <div class="container">
+          <div class="price-block">
+            <div class="price-block__item">
+              <h3 class="price-title">ЧТО ВХОДИТ</h3>
+              <div class="price-description">
+                <div class="price-description__item">
+                  <img src="./assets/images/gray_arrow.svg" alt="arrow">
+                  <div>Завтраки в красивых отелях</div>
+                </div>
+                <div class="price-description__item">
+                  <img src="./assets/images/gray_arrow.svg" alt="arrow">
+                  <div>Проживание. Мы выбираем лишь проверенные места для ночлега, уровня 4+ и с рейтингом Booking не ниже 8.0</div>
+                </div>
+                <div class="price-description__item">
+                  <img src="./assets/images/gray_arrow.svg" alt="arrow">
+                  <div>Активности. Посещение музеев, экскурсий, мастер-классов, услуги гида</div>
+                </div>
+                <div class="price-description__item">
+                  <img src="./assets/images/gray_arrow.svg" alt="arrow">
+                  <div>Языковое наставничество</div>
+                </div>
+                <div class="price-description__item">
+                  <img src="./assets/images/gray_arrow.svg" alt="arrow">
+                  <div>Трансфер. Трансферы по маршруту, из аэропорта по прилету</div>
+                </div>
+              </div>
+            </div>
+            <div class="price-block__item">
+              <h3 class="price-title">ЧТО НЕ ВХОДИТ</h3>
+              <div class="price-description">
+                <div class="price-description__item">
+                  <img src="./assets/images/gray_arrow.svg" alt="arrow">
+                  <div>Перелёт в Кейптаун и обратно</div>
+                </div>
+                <div class="price-description__item">
+                  <img src="./assets/images/gray_arrow.svg" alt="arrow">
+                  <div>Обеды и ужины. Примерно $300 за всю поездку</div>
+                </div>
+                <div class="price-description__item">
+                  <img src="./assets/images/gray_arrow.svg" alt="arrow">
+                  <div>Медицинская страховка. Страховка для перелёта из России не обязательна</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="section-header section-header__couches">КТО БУДЕТ ЯЗЫКОВЫМ НАСТАВНИКОМ?</header>
+        <div class="container">
+          <div class="trip-structure trip-structure__coaches">
+            <div class="trip-structure__text">
+              <h3 class="trip-structure__text-title">ВИКА</h3>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>6 месяцев жила и работала в США по программе Work&Travel</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>9 месяцев училась и работала во Вьетнаме</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>8 лет преподаю английский детям и grown-ups, в т.ч. группам</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>2 года веду частную психологическую практику</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Через путешествия я впервые спустя 7 лет смогла разговориться на английском! Поэтому I am convinced, что такой формат поможет многим break the ice between вами и английским!</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Считаю, что все преграды человека находятся только в его голове.</div>
+              </div>
+            </div>
+            <div class="trip-structure__photo trip-structure__photo-couch">
+              <img class="couch-photo" src="./assets/images/Вика.png" alt="guides" />
+            </div>
+            <div class="trip-structure__photo trip-structure__photo-couch">
+              <img class="couch-photo" src="./assets/images/Ксюша.png" alt="CapeTown_photo" />
+            </div>
+            <div class="trip-structure__text">
+              <h3 class="trip-structure__text-title">КСЮША</h3>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>5 лет преподавала английский взрослым и детям, в т.ч. группам</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Сдала международный экзамен IELTS на высокий балл - 7.5</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Путешествовала автостопом по Европе, жила в Co-livings и по Couchsurfing, где постоянно общалась с носителями</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Организовала 3 спортивных похода в горы, ascended to the top of Эльбрус</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>“Английский дал мне пережить сотни insights, радости, грусти в путешествиях благодаря тому, что я могла общаться: с местными, туристами, мигрантами - везде, куда бы я не приехала</div>
+              </div>
+              <div class="trip-structure__text-item trip-structure__text-item__couch">
+                <img src="./assets/images/gray_arrow.svg" alt="arrow" />
+                <div>Хочу учить пользоваться этим инструментом, чтобы лед ломался в том числе и между людьми. Всем мир!”</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="section-header__orange">ЧТО ПИШУТ НАШИ КЛИЕНТЫ?</header>
+        <div class="container review-container">
+          <div class="review-item" id="item1">
+            <img src="./assets/images/Таня.png" alt="photo" />
+            <div class="review">
+              <h3 class="review__title">ТАНЯ</h3>
+              <p class="review__text">Я ехала изначально с целью путешествовать. Но после самой поездки у меня появился стимул изучать английский. Еще один пункт, ради которого я могу путешествовать, и что мне нужно, чтобы путешествовать. Ты осознаешь, что нужно общаться не на русском, а на английском. Для мозга это экстренная ситуация. Это хорошая практика. Есть привязка к ситуациям - это очень важно. Мне нравится такой подход. Само путешествие было отлично организовано. Все время было чем заняться.</p>
+            </div>
+          </div>
+          <div class="review-item" id="item2">
+            <img src="./assets/images/Валя.png" alt="photo" />
+            <div class="review">
+              <h3 class="review__title">ВАЛЯ</h3>
+              <p class="review__text">Всю поездку меня окружали иностранные языки. Сначала мне было очень волнительно, но постепенно я привыкла, мне стало спокойно. Сначала было непонятно каждое слово, а сейчас я слышу и понимаю, что мне говорят. Восприятие стало легче. Мой английский стал увереннее. Раньше я не знала, с чего начинать, как разговаривать. А теперь я уже чувствую, что у меня не такой уж и маленький словарный запас и, если работать, у меня все получится.</p>
+            </div>
+          </div>
+          <div class="review-item" id="item3">
+            <img src="./assets/images/Алина.png" alt="photo" />
+            <div class="review">
+              <h3 class="review__title">АЛИНА</h3>
+              <p class="review__text">Всю поездку меня окружали иностранные языки. Сначала мне было очень волнительно, но постепенно я привыкла, мне стало спокойно. Сначала было непонятно каждое слово, а сейчас я слышу и понимаю, что мне говорят. Восприятие стало легче. Мой английский стал увереннее. Раньше я не знала, с чего начинать, как разговаривать. А теперь я уже чувствую, что у меня не такой уж и маленький словарный запас и, если работать, у меня все получится.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <header class="section-header">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</header>
+        <div class="container">
+          <div class="accordeon">
+            <div class="accordeon__item">
+              <i class="fa-solid fa-plus fa-xl"></i>
+              <div class="accordeon__item-wrapper">
+                <div class="accordeon__item-header">Что если я боюсь говорить на английском?</div>
+                <div class="accordeon__item-body">Не бойся, заебал!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <i class="fa-solid fa-plus fa-xl"></i>
+              <div class="accordeon__item-wrapper">
+                <div class="accordeon__item-header">Что если я боюсь говорить на английском?</div>
+                <div class="accordeon__item-body">Не бойся, заебал!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <i class="fa-solid fa-plus fa-xl"></i>
+              <div class="accordeon__item-wrapper">
+                <div class="accordeon__item-header">Что если я боюсь говорить на английском?</div>
+                <div class="accordeon__item-body">Не бойся, заебал!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <i class="fa-solid fa-plus fa-xl"></i>
+              <div class="accordeon__item-wrapper">
+                <div class="accordeon__item-header">Что если я боюсь говорить на английском?</div>
+                <div class="accordeon__item-body">Не бойся, заебал!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <i class="fa-solid fa-plus fa-xl"></i>
+              <div class="accordeon__item-wrapper">
+                <div class="accordeon__item-header">Что если я боюсь говорить на английском?</div>
+                <div class="accordeon__item-body">Не бойся, заебал!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <i class="fa-solid fa-plus fa-xl"></i>
+              <div class="accordeon__item-wrapper">
+                <div class="accordeon__item-header">Что если я боюсь говорить на английском?</div>
+                <div class="accordeon__item-body">Не бойся, заебал!</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
+    <script src="https://kit.fontawesome.com/a6979ee88b.js" crossorigin="anonymous"></script>
     <script src="./main.js"></script>
   </body>
 </html>

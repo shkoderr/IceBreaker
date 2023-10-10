@@ -127,30 +127,13 @@ body {
 /* ----СЛЕДУЮЩАЯ ОСТАНОВКА---- */
 .section-header {
   position: relative;
-  margin: 11.3rem 0 3.9rem;
+  margin-top: 11rem;
+  padding: 2rem 0;
   text-align: center;
   font-size: 4.375rem;
   font-weight: 800;
-}
-
-.section-header::before {
-  content: "";
-  position: absolute;
-  bottom: 10rem;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #000;
-}
-
-.section-header::after {
-  content: "";
-  position: absolute;
-  top: 10rem;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .trip-content {
@@ -341,7 +324,11 @@ body {
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  animation: scrollText 10s linear infinite;
+  animation: scrollText 9s linear infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-direction: normal;
 }
 
 .about-bar__item span {
@@ -500,4 +487,214 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ----КАК ПОСТРОЕН ТУР---- */
+.trip-structure {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.trip-structure__text {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #000;
+}
+
+.trip-structure__photo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  max-height: 724px;
+}
+
+.trip-structure__photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 4.9rem;
+  width: 1px;
+  background: #000;
+}
+
+.trip-structure__photo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 4.9rem;
+  width: 1px;
+  background: #000;
+}
+
+.trip-structure__photo img {
+  padding: 2rem;
+}
+
+.trip-structure__text:nth-child(odd) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.trip-structure__photo:nth-child(odd) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+.trip-structure__text-title {
+  margin: 2rem 0 2rem 2rem;
+  font-size: 35px;
+}
+
+.trip-structure__text-item {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.trip-structure__text-item img {
+  margin-top: 0.5rem;
+}
+
+.trip-structure__text-item div {
+  font-size: var(--font-size);
+  margin-left: 0.7rem;
+}
+
+/* ----ИЗ ЧЕГО СОСТОИТ СТОИМОСТЬ---- */
+.section-header__orange {
+  margin: 3rem 0;
+  text-align: center;
+  font-size: var(--font-size-header);
+  font-weight: 800;
+  color: #DA6E30;
+}
+
+.price-block {
+  display: flex;
+  gap: 3rem;
+  background-color: #D8899E;
+}
+
+.price-block__item {
+  flex: 1;
+  padding: 4rem;
+}
+
+.price-title {
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 35px;
+}
+
+.price-description__item {
+  margin-bottom: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.price-description__item div {
+  font-size: var(--font-size);
+}
+
+
+/* ----НАСТАВНИКИ---- */
+.trip-structure__coaches {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-header__couches {
+  font-size: 60px;
+}
+
+.trip-structure__text-item__couch {
+  margin-bottom: 2rem;
+}
+
+.couch-photo {
+  max-height: 660px;
+}
+
+.trip-structure__photo-couch::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 3.3rem;
+  width: 1px;
+  background: #000;
+}
+
+.trip-structure__photo-couch::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3.2rem;
+  width: 1px;
+  background: #000;
+}
+
+/* ----REVIEWS---- */
+.review-container {
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  gap: 5rem;
+  overflow: hidden;
+}
+
+.review-item {
+  display: flex;
+  width: 100%;
+}
+
+.review {
+  margin-left: 2rem;
+  width: 566px;
+}
+
+.review__title {
+  margin-bottom: 1.5rem;
+  font-size: 35px;
+}
+
+.review__text {
+  font-size: var(--font-size);
+}
+
+/* ----ACCORDEON---- */
+.accordeon {
+  margin: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordeon__item {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fa-plus:hover {
+  cursor: pointer;
+}
+
+.accordeon__item-header {
+  font-size: 2.5rem;
+}
+
+.accordeon__item-body {
+  display: none;
 }
