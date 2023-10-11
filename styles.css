@@ -29,6 +29,10 @@ body {
   overflow-x: hidden;
 }
 
+.section {
+  margin: 0 -16px;
+}
+
 .container {
   width: 100%;
   max-width: 1600px;
@@ -43,22 +47,14 @@ body {
 
 .header-upper {
   height: 18.25rem;
-  margin-bottom: 1.875rem;
+  margin: 5rem 0 1.875rem;
   display: flex;
   justify-content: space-between;
-}
-
-.header-upper::after {
-  content: "";
-  position: absolute;
-  top: 292px;
-  left: 0;
-  width: 100%;
-  height: 0.0625rem;
-  background-color: var(--color-text);
+  border-bottom: 0.0625rem solid var(--color-text);
 }
 
 .header-upper__text {
+  margin-left: 2rem;
   width: 60vw;
   border-left: 0.0625rem solid var(--color-text);
   border-right: 0.0625rem solid var(--color-text);
@@ -80,17 +76,41 @@ body {
   color: var(--color-pink);
 }
 
-.header-upper__star {
-  display: flex;
+.header-upper__icon {
+  position: relative;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto;
+  align-items: flex-start;
+  width: 40vw;
+}
+
+.header-upper__icon::after {
+  position: absolute;
+  display: block;
+  top: 37%;
+  left: 0;
+  width: 100%;
+  height: 0.0625rem;
+  content: "";
+  background: var(--color-text);
+}
+
+.header-upper__icon img {
+  margin-top: -2rem;
+  padding-left: 8.5rem;
 }
 
 .header-main {
   margin-top: 8rem;
   display: flex;
   justify-content: center;
+}
+
+.description {
+  padding: 1rem;
+  text-wrap: balance;
+  font-family: 'Crimson Pro', sans-serif;
+  font-size: 1.875rem;
+  color: var(--color-text);
 }
 
 .menu {
@@ -104,13 +124,15 @@ body {
   border: 0.0625rem solid var(--color-text);
 }
 
-.menu-background {
+.menu::before {
+  content: "";
   position: absolute;
-  top: 35px;
+  top: 2rem;
   left: 2rem;
-  width: 100%;
-  height: 100%;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  right: -2rem;
+  bottom: -2rem;
+  background-color: var(--color-pink);
+  border: 0.0625rem solid var(--color-text);
   z-index: -1;
 }
 
@@ -257,11 +279,21 @@ body {
 .container__about {
   position: relative;
   margin-top: 2.5rem;
-  margin-left: 0;
   width: 97vw;
-  /* TODO Поменять цвет на корректный */
   background-color: var(--color-orange);
   border: 0.0625rem solid var(--color-text);
+}
+
+.container__about::after {
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: -2rem;
+  bottom: -2rem;
+  background-color: var(--color-orange);
+  border: 0.0625rem solid var(--color-text);
+  z-index: -1;
 }
 
 .about-content {
@@ -315,13 +347,13 @@ body {
   overflow: hidden;
 }
 
-.about-bar::before {
+.container__about::before {
   content: "";
   height: 0.0625rem;
   background: var(--color-text);
-  width: 102.1%;
+  width: 102.2%;
   position: absolute;
-  top: 0;
+  bottom: 20%;
   left: 0;
 }
 
@@ -364,7 +396,7 @@ body {
 }
 
 /* ----ПОЧЕМУ С НАМИ?---- */
-.reasons {
+.section__reasons {
   margin-top: 6rem;
 }
 
