@@ -1,6 +1,6 @@
 const headers = document.querySelectorAll('.accordeon__item-header');
 
-//----PARALLAX-EFFECT----
+//--------------PARALLAX-EFFECT--------------
 const parallaxItems = document.querySelectorAll('.parallax-item');
 
 window.addEventListener('scroll', () => {
@@ -15,7 +15,7 @@ window.addEventListener('scroll', () => {
   });
 });
 
-//----PARALLAX FOR REVIEWS----
+//--------------PARALLAX FOR REVIEWS--------------
 const reviewItems = document.querySelectorAll('.review-item');
 
 window.addEventListener('scroll', () => {
@@ -30,7 +30,13 @@ window.addEventListener('scroll', () => {
   });
 });
 
-//----ACCORDEON----
+
+//------------------ACCORDEON------------------
+for (let i = 0; i < headers.length; i++) {
+  headers[i].addEventListener('click', showContent);
+  headers[i].addEventListener('touch', showContent);
+};
+
 function showContent() {
   this.classList.toggle('active')
   const accordeonContent = this.nextElementSibling

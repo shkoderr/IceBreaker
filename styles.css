@@ -1,7 +1,18 @@
 /* ----VARIABLES---- */
 :root {
   --font-size: 25px;
+  --font-size-little: 20px;
+  --font-size-title: 35px;
+  --font-size-large: 40px;
   --font-size-header: 70px;
+
+  --color-text: #000;
+  --color-secondary: #4F4F4F;
+  --color-background: #ffefc1;
+  --color-pink: #d8899e;
+  --color-green: #3a7352;
+  --color-light: #fafafa;
+  --color-orange: #dA6e30;
 }
 /* ----COMMON STYLES---- */
 *,
@@ -14,12 +25,13 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffefc1;
+  background-color: var(--color-background);
   overflow-x: hidden;
 }
 
 .container {
   width: 100%;
+  max-width: 1600px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -30,8 +42,8 @@ body {
 }
 
 .header-upper {
-  height: 292px;
-  margin-bottom: 30px;
+  height: 18.25rem;
+  margin-bottom: 1.875rem;
   display: flex;
   justify-content: space-between;
 }
@@ -42,21 +54,21 @@ body {
   top: 292px;
   left: 0;
   width: 100%;
-  height: 1px;
-  background-color: #000;
+  height: 0.0625rem;
+  background-color: var(--color-text);
 }
 
 .header-upper__text {
   width: 60vw;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 0.0625rem solid var(--color-text);
+  border-right: 0.0625rem solid var(--color-text);
 }
 
 .title {
   display: block;
   margin: 23px 0 36px 35px;
-  font-size: 20px;
-  color: #000;
+  font-size: var(--font-size-little);
+  color: var(--color-text);
   font-family: 'Krona One', sans-serif;
 }
 
@@ -65,7 +77,7 @@ body {
   font-family: 'Crimson Pro', sans-serif;
   font-size: var(--font-size-header);
   font-weight: bold;
-  color: #D8899E;
+  color: var(--color-pink);
 }
 
 .header-upper__star {
@@ -81,21 +93,15 @@ body {
   justify-content: center;
 }
 
-/*.description {
-  margin: 0 0 45px 78px;
-  font-family: 'Crimson Pro', sans-serif;
-  font-size: 30px;
-}*/
-
 .menu {
   position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 78rem;
-  height: 156px;
-  background-color: #D8899E;
-  border: 1px solid #000;
+  height: 9.75rem;
+  background-color: var(--color-pink);
+  border: 0.0625rem solid var(--color-text);
 }
 
 .menu-background {
@@ -110,13 +116,13 @@ body {
 
 .nav-title {
   font-family: 'Krona One', sans-serif;
-  font-size: 20px;
+  font-size: var(--font-size-little);
 }
 
 .nav-link {
   font-family: 'Crimson Pro', sans-serif;
-  font-size: 30px;
-  color: #000;
+  font-size: 1.875rem;
+  color: var(--color-text);
   text-decoration: none;
 }
 
@@ -132,8 +138,8 @@ body {
   text-align: center;
   font-size: 4.375rem;
   font-weight: 800;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 0.0625rem solid var(--color-text);
+  border-bottom: 0.0625rem solid var(--color-text);
 }
 
 .trip-content {
@@ -148,8 +154,8 @@ body {
   top: 31rem;
   left: 0;
   width: 100%;
-  height: 1px;
-  background-color: #000;
+  height: 0.0625rem;
+  background-color: var(--color-text);
 }
 
 .trip-content__description {
@@ -161,8 +167,8 @@ body {
   flex-direction: column;
   padding: 0 2rem;
   margin-left: 1rem;
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 0.0625rem solid var(--color-text);
+  border-right: 0.0625rem solid var(--color-text);
 }
 
 .block-title {
@@ -194,7 +200,7 @@ body {
 .trip-info__item span:first-child {
   margin-right: 4.375rem;
   font-size: var(--font-size);
-  color: #4F4F4F;
+  color: var(--color-secondary);
 }
 
 .trip-info__item span:last-child {
@@ -206,8 +212,8 @@ body {
   margin-top: 3.375rem;
   width: 37.8125cqw;
   height: 4.5rem;
-  background-color: #3A7352;
-  color: #FAFAFA;
+  background-color: var(--color-green);
+  color: var(--color-light);
   font-size: var(--font-size);
 }
 
@@ -227,8 +233,8 @@ body {
 .trip-content__photo::before {
   content: "";
   width: 25%;
-  height: 1px;
-  background: #000;
+  height: 0.0625rem;
+  background: var(--color-text);
   top: 50%;
   right: 50px;
 }
@@ -236,8 +242,8 @@ body {
 .trip-content__photo::after {
   content: "";
   width: 25%;
-  height: 1px;
-  background: #000;
+  height: 0.0625rem;
+  background: var(--color-text);
   top: 50%;
   right: 20px;
 }
@@ -254,8 +260,8 @@ body {
   margin-left: 0;
   width: 97vw;
   /* TODO Поменять цвет на корректный */
-  background-color: #DA6E30;
-  border: 1px solid #000;
+  background-color: var(--color-orange);
+  border: 0.0625rem solid var(--color-text);
 }
 
 .about-content {
@@ -311,8 +317,8 @@ body {
 
 .about-bar::before {
   content: "";
-  height: 1px;
-  background: #000;
+  height: 0.0625rem;
+  background: var(--color-text);
   width: 102.1%;
   position: absolute;
   top: 0;
@@ -352,8 +358,8 @@ body {
   width: 100%;
   height: 100%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  background-color: #DA6E30;
-  border: 1px solid #000;
+  background-color: var(--color-orange);
+  border: 0.0625rem solid var(--color-text);
   z-index: -1;
 }
 
@@ -366,7 +372,7 @@ body {
   font-size: var(--font-size-header);
   font-weight: 800;
   text-align: center;
-  color: #D8899E;
+  color: var(--color-pink);
 }
 
 .benefits {
@@ -399,7 +405,7 @@ body {
 
 .benefit-title {
   margin-bottom: 4rem;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -423,7 +429,7 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  background-color: #3A7352;
+  background-color: var(--color-green);
   height: 40rem;
 }
 
@@ -440,8 +446,8 @@ body {
   margin: 0 auto;
   width: 37.8125rem;
   height: 4.5rem;
-  background-color: #D8899E;
-  color: #FAFAFA;
+  background-color: var(--color-pink);
+  color: var(--color-light);
   font-size: var(--font-size);
   font-weight: 400;
 }
@@ -500,7 +506,7 @@ body {
   padding-left: 1rem;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.0625rem solid var(--color-text);
 }
 
 .trip-structure__photo {
@@ -508,7 +514,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 0.0625rem solid var(--color-text);
   max-height: 724px;
 }
 
@@ -518,8 +524,8 @@ body {
   top: 0;
   left: 50%;
   height: 4.9rem;
-  width: 1px;
-  background: #000;
+  width: 0.0625rem;
+  background: var(--color-text);
 }
 
 .trip-structure__photo::after {
@@ -528,8 +534,8 @@ body {
   bottom: 0;
   left: 50%;
   height: 4.9rem;
-  width: 1px;
-  background: #000;
+  width: 0.0625rem;
+  background: var(--color-text);
 }
 
 .trip-structure__photo img {
@@ -537,18 +543,18 @@ body {
 }
 
 .trip-structure__text:nth-child(odd) {
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 0.0625rem solid var(--color-text);
+  border-right: 0.0625rem solid var(--color-text);
 }
 
 .trip-structure__photo:nth-child(odd) {
-  border-left: 1px solid #000;
-  border-right: 1px solid #000;
+  border-left: 0.0625rem solid var(--color-text);
+  border-right: 0.0625rem solid var(--color-text);
 }
 
 .trip-structure__text-title {
   margin: 2rem 0 2rem 2rem;
-  font-size: 35px;
+  font-size: var(--font-size-title);
 }
 
 .trip-structure__text-item {
@@ -570,15 +576,16 @@ body {
 .section-header__orange {
   margin: 3rem 0;
   text-align: center;
+  text-wrap: balance;
   font-size: var(--font-size-header);
   font-weight: 800;
-  color: #DA6E30;
+  color: var(--color-orange);
 }
 
 .price-block {
   display: flex;
   gap: 3rem;
-  background-color: #D8899E;
+  background-color: var(--color-pink);
 }
 
 .price-block__item {
@@ -589,7 +596,7 @@ body {
 .price-title {
   margin-left: 2.5rem;
   margin-bottom: 2.5rem;
-  font-size: 35px;
+  font-size: var(--font-size-title);
 }
 
 .price-description__item {
@@ -628,8 +635,8 @@ body {
   top: 0;
   left: 50%;
   height: 3.3rem;
-  width: 1px;
-  background: #000;
+  width: 0.0625rem;
+  background: var(--color-text);
 }
 
 .trip-structure__photo-couch::after {
@@ -638,8 +645,8 @@ body {
   bottom: 0;
   left: 50%;
   height: 3.2rem;
-  width: 1px;
-  background: #000;
+  width: 0.0625rem;
+  background: var(--color-text);
 }
 
 /* ----REVIEWS---- */
@@ -663,7 +670,7 @@ body {
 
 .review__title {
   margin-bottom: 1.5rem;
-  font-size: 35px;
+  font-size: var(--font-size-title);
 }
 
 .review__text {
@@ -673,10 +680,10 @@ body {
 /* ----ACCORDEON---- */
 .accordeon {
   margin: 5rem 0;
+  padding-left: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .accordeon__item {
@@ -692,9 +699,62 @@ body {
 }
 
 .accordeon__item-header {
-  font-size: 2.5rem;
+  font-size: var(--font-size-large);
 }
 
-.accordeon__item-body {
+.accordeon__item-header:hover {
+  cursor: pointer;
+}
+
+.accordeon__content {
+  margin-top: 1rem;
+  padding-left: 2.4rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+  font-size: var(--font-size-title);
+  color: var(--color-orange);
+}
+
+.hidden {
   display: none;
+}
+
+
+/* --------------CONCLUSION--------------- */
+.contacts {
+  margin: 0 auto;
+  width: 64.5rem;
+  height: 20.5rem;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.contacts__text {
+  font-size: var(--font-size-header);
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--color-orange);
+}
+
+.social-media {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-media__item:hover {
+  cursor: pointer;
+}
+
+.info {
+  margin-top: 30rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__item {
+  padding: 1rem;
+  font-size: var(--font-size);
+  color: var(--color-secondary);
 }
